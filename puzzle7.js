@@ -1,6 +1,6 @@
 function move(direction) {
 
-while(getColor != "red" && remainingDots() > 0) {
+while(getColor() != "red" && remainingDots() > 0) {
   if(direction == "down") {
     down();
   }
@@ -19,6 +19,6 @@ if(remainingDots() > 0){
 }
 
 while(remainingDots() > 0) {
-  move(down);
-  move(up);
+  move("down");
+  move("up");
 }
