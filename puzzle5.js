@@ -1,12 +1,17 @@
+var Tilecolor = getColor();  
+
 function moveRight() {
-  while(getColor() != "blue" || getColor() != "red" || remainingDots() == 0) {
+  Tilecolor = getColor();
+  while(Tilecolor == false && remainingDots() >= 0) {
     right();
+    Tilecolor = getColor();
   }
-  if(getColor() == "blue"){
+  if(Tilecolor == "blue"){
     down();
   }
-  if(getColor() == "red"){
-    up;
+  
+  if(Tilecolor == "red"){
+    up();
   }
 }
 
