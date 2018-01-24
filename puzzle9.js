@@ -15,19 +15,23 @@ function draw(direction) {
 }
 
 var count = 0;
-while(count < 9){
-  draw(right);
+while(count < 100){
+  draw("right");
   count = count + 1;
 }
-while(count < 9){
-  draw(down);
+count = 0;
+while(count < 100){
+  draw("down");
   count = count + 1;
 }
-while(count < 9){
-  draw(left);
+count = 0;
+while(count < 100){
+  draw("left");
   count = count + 1;
 }
-while(count < 9){
-  draw(up);
+count = 0;
+while(count < 100){
+  draw("up");
   count = count + 1;
 }
+count = 0;
