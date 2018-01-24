@@ -6,13 +6,13 @@ if(getColor() == "blue") {
  down();
  down();
  down();
- direction = down;
+ direction = "down";
 }
 if(getColor() == "red") {
   up();
   up();
   up();
-  direction = up;
+  direction = "up";
 }
 
 
